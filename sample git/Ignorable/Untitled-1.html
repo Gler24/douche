@@ -1,0 +1,124 @@
+<html>
+<head>
+  <title>Favorite Artist Age Comparison</title>
+  <style>
+    /* THis will be the design */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #5c5c5c;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30vh;
+  border: 3px solid black;
+  padding: 60px;
+  background: linear-gradient(to right, #b1b0b0, #5a5a5a);
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-top: 0;
+      font-family: cursive;
+      background: linear-gradient(to right, #ffffff, #f2524c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+      font-family: cursive;
+      background: linear-gradient(to right, #fcffff, #ffc9fd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #3d3ae5;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+      font-family: cursive;
+    }
+    .message {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .message-younger {
+      background-color: #50f476;
+      color: #060c37;
+    }
+    .message-same-age {
+      background-color: #6671ea;
+      color: #ff8c00;
+    }
+    .message-older {
+      background-color: #ffd8d8;
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Favorite Artist Age</h1>
+  
+    <div>
+      <label for="ageInput">Enter the age of your favorite artist:</label>
+      <!-- The place holder will hint the user that the input will be age-->
+      <input type="number" id="ageInput" placeholder="Age">
+      <button onclick="compareAge()">Compare</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script>  
+    /* This function is named compareAge and will be called by onClick */
+    function compareAge() {
+      /* This var is going to collect ageInput from the id that the input type="number" had, and it would put it into the "age" */
+      var age = parseInt(document.getElementById('ageInput').value);
+      /* This var is going to output the resultElement that will end up from inside the condition */
+      var resultElement = document.getElementById('result');
+      /* This will be the condition that is needed to be completed by using the "age" that is collected from ageInput */
+      if (age < 25) {
+        /* This will output the result */
+        resultElement.innerHTML = '<div class="message message-younger">They\'re ' + age + ' years old and they\'re younger than Google.</div>';
+      } else if (age === 25) {
+        resultElement.innerHTML = '<div class="message message-same-age">They\'re ' + age + ' and they\'re as old as Google.</div>';
+      } else {
+        resultElement.innerHTML = '<div class="message message-older">They\'re ' + age + ' and they\'re older than Google.</div>';
+      }
+    }
+  </script>
+</body>
+</html>

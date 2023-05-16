@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Deuche Salon</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MainSupport.css">
+    </head>
+    <div class="navigation">
+        <nav>
+          <h2 class="title"><a href="MainPage.html"> <image src="Titlenobg.png" alt="image" heigth="180" width="220"></image></a></h2>
+          <ul>
+            <li><a href="MainPage.html">Home</a></li>
+            <div style="border: 1px solid black; border-radius: 5px;">
+            <li><a href="ServicePage.html">Services</a></li>
+            </div>
+            <li><a href="AboutPage.html">About</a></li>
+            <li><a href="BranchPage.html">Branches</a></li>
+            <li><a href="ShopPage.html">Shop</a></li>   
+            <li><a href="StylistPage.html">Stylist</a></li>
+
+        </ul>
+        <button id="login" type="button" onclick="window.location.href='LoginPage.html'">Login</button>
+    </nav>
+    </div>
+    <body>
+        <div class="floating-button2">
+            <a href="ServicePage.html#selection"><img src="arrowup.png" alt="Floating Image Button"></a>
+        </div>
+        <div class="container4" id="selection">
+            <div class="item4">
+              <img src="rebond.png" alt="Rebond Services">
+              <h3>Rebond Services</h3>
+              <p>Description for Image 1</p>
+              <a href="ServicePage.html#auto1" class="image-overlay">
+                <h3>Check now!</h3>
+              </a>
+            </div>
+            <div class="item4">
+              <img src="keratin.png" alt="Keratin Services">
+              <h3>Brazilian Keratin Treatment Services</h3>
+              <p>Description for Image 2</p>
+              <a href="ServicePage.html#auto2" class="image-overlay">
+                <h3>Check now!</h3>
+              </a>
+            </div>
+            <div class="item4">
+              <img src="haircolor.png" alt="Hair Coloring services">
+              <h3>Hair Coloring Services</h3>
+              <p>Description for Image 3</p>
+              <a href="ServicePage.html#auto3" class="image-overlay">
+                <h3>Check now!</h3>
+              </a>
+            </div>
+            <div class="item4">
+                <img src="Hair treatment.png" alt="Hair Treatment Services">
+                <h3>Hair Treatment Services</h3>
+                <p>Description for Image 2</p>
+                <a href="ServicePage.html#auto4" class="image-overlay">
+                    <h3>Check now!</h3>
+                  </a>
+            </div>
+            <div class="item4">
+                <img src="hairextention.png" alt="Hair Extention Services">
+                <h3>Hair Extention Services</h3>
+                <p>Description for Image 2</p>
+                <a href="ServicePage.html#auto5" class="image-overlay">
+                    <h3>Check now!</h3>
+                  </a>
+            </div>
+            <div class="item4">
+                <img src="manicure.png" alt="Manicure Services">
+                <h3>Manicure/Pedicure Services</h3>
+                <p>Description for Image 2</p>
+                <a href="ServicePage.html#auto6" class="image-overlay">
+                    <h3>Check now!</h3>
+                  </a>
+            </div>
+            <div class="item4">
+                <img src="footspa.png" alt="Footspa Services">
+                <h3>Foot Spa Services</h3>
+                <p>Description for Image 2</p>
+                <a href="ServicePage.html#auto7" class="image-overlay">
+                    <h3>Check now!</h3>
+                  </a>
+            </div>
+          </div>
+          <script>
+            $(document).ready(function() {
+  $('a.image-link').click(function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    var target = $(this.hash); // Get the target element based on the href hash
+    $('html, body').animate({
+      scrollTop: target.offset().top // Scroll to the target element's position
+    }, 1000); // Set the animation duration to 1 second
+  });
+});
+</script>
+<div class="container3">
+  <div class="item">
+      <div class="container2" id="auto1">
+        <h3>Rebond Services</h3>
+        <br>
+          <div class="item2">
+            <h3>REBOND w/ Hair Mask PLUS FREE Hair Trimming</h3>
+            <h3>799.95</h3>
+          </div>
+          <div class="item2">
+            <h3>REBOND w/ Washable Cello PLUS Hair Mask</h3>
+            <h3>1,199.95</h3>
+          </div>
+          <div class="item2">
+              <h3>REBOND w/ Magic Keratin PLUS Washable Cello</h3>
+              <h3>1,499.95</h3>
+          </div>
+          <div class="item2">
+              <h3>REBOND w/ Magic Keratin PLUS Semidilino</h3>
+              <h3>1,699.95</h3>
+          </div>
+        </div>
+        <div class="container2" id="auto2">
+          <h3>Keratin Services</h3>
+        <br>
+          <div class="item2">
+            <h3>REBOND w/ Hair Mask PLUS FREE Hair Trimming</h3>
+            <h3>799.95</h3>
+          </div>
+          <div class="item2">
+            <h3>REBOND w/ Washable Cello PLUS Hair Mask</h3>
+            <h3>1,199.95</h3>
+          </div>
+          <div class="item2">
+              <h3>REBOND w/ Magic Keratin PLUS Washable Cello</h3>
+              <h3>1,499.95</h3>
+          </div>
+          <div class="item2">
+              <h3>REBOND w/ Magic Keratin PLUS Semidilino</h3>
+              <h3>1,699.95</h3>
+          </div>
+        </div>
+        <div class="container2" id="auto3">
+          <h3>Hair Coloring Services</h3>
+        <br>
+          <div class="item2">
+            <h3>REBOND w/ Hair Mask PLUS FREE Hair Trimming</h3>
+            <h3>799.95</h3>
+          </div>
+          <div class="item2">
+            <h3>REBOND w/ Washable Cello PLUS Hair Mask</h3>
+            <h3>1,199.95</h3>
+          </div>
+          <div class="item2">
+              <h3>REBOND w/ Magic Keratin PLUS Washable Cello</h3>
+              <h3>1,499.95</h3>
+          </div>
+          <div class="item2">
+              <h3>REBOND w/ Magic Keratin PLUS Semidilino</h3>
+              <h3>1,699.95</h3>
+          </div>
+        </div>
+        <div class="container2" id="auto4">
+          <h3>Hair Treatment Services</h3>
+        <br>
+          <div class="item2">
+            <h3>REBOND w/ Hair Mask PLUS FREE Hair Trimming</h3>
+            <h3>799.95</h3>
+          </div>
+          <div class="item2">
+            <h3>REBOND w/ Washable Cello PLUS Hair Mask</h3>
+            <h3>1,199.95</h3>
+          </div>
+          <div class="item2">
+              <h3>REBOND w/ Magic Keratin PLUS Washable Cello</h3>
+              <h3>1,499.95</h3>
+          </div>
+          <div class="item2">
+              <h3>REBOND w/ Magic Keratin PLUS Semidilino</h3>
+              <h3>1,699.95</h3>
+          </div>
+        </div>
+        <div class="container2" id="auto5">
+          <h3>Hair Extention Services</h3>
+        <br>
+          <div class="item2">
+            <h3>REBOND w/ Hair Mask PLUS FREE Hair Trimming</h3>
+            <h3>799.95</h3>
+          </div>
+          <div class="item2">
+            <h3>REBOND w/ Washable Cello PLUS Hair Mask</h3>
+            <h3>1,199.95</h3>
+          </div>
+          <div class="item2">
+              <h3>REBOND w/ Magic Keratin PLUS Washable Cello</h3>
+              <h3>1,499.95</h3>
+          </div>
+          <div class="item2">
+              <h3>REBOND w/ Magic Keratin PLUS Semidilino</h3>
+              <h3>1,699.95</h3>
+          </div>
+        </div>
+        <div class="container2" id="auto6">
+          <h3>Manicure/Pedicure Services</h3>
+        <br>
+          <div class="item2">
+            <h3>REBOND w/ Hair Mask PLUS FREE Hair Trimming</h3>
+            <h3>799.95</h3>
+          </div>
+          <div class="item2">
+            <h3>REBOND w/ Washable Cello PLUS Hair Mask</h3>
+            <h3>1,199.95</h3>
+          </div>
+          <div class="item2">
+              <h3>REBOND w/ Magic Keratin PLUS Washable Cello</h3>
+              <h3>1,499.95</h3>
+          </div>
+          <div class="item2">
+              <h3>REBOND w/ Magic Keratin PLUS Semidilino</h3>
+              <h3>1,699.95</h3>
+          </div>
+        </div>
+        <div class="container2" id="auto7">
+          <h3>Foot Spa Services</h3>
+        <br>
+          <div class="item2">
+            <h3>REBOND w/ Hair Mask PLUS FREE Hair Trimming</h3>
+            <h3>799.95</h3>
+          </div>
+          <div class="item2">
+            <h3>REBOND w/ Washable Cello PLUS Hair Mask</h3>
+            <h3>1,199.95</h3>
+          </div>
+          <div class="item2">
+              <h3>REBOND w/ Magic Keratin PLUS Washable Cello</h3>
+              <h3>1,499.95</h3>
+          </div>
+          <div class="item2">
+              <h3>REBOND w/ Magic Keratin PLUS Semidilino</h3>
+              <h3>1,699.95</h3>
+          </div>
+        </div>
+  </div>
+</div>
+    </body>
+    </html>

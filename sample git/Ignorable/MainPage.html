@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Tab name -->
+	<title>Salon Management Website</title>
+	<link rel="stylesheet" href="MainSupport.css">
+	<style>
+		.floating-button {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			width: 120px;
+			height: 120px;
+		}
+
+		.floating-button img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		}
+		body{
+   			background-image: url(MainBG.png);
+    		background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			opacity: 0.9;
+}
+		
+	</style>
+</head>
+<body>
+	<!-- the floating button on the lower right side -->
+	<div class="floating-button">
+		<a href="MainPage.html"><img src="C:\Users\Mamerto Gler\Desktop\Capstone Title\Website resources\Title borderless.png" alt="Floating Image Button"></a>
+	</div>
+	<header>
+		<!-- Icon -->
+		<div class="header-container">
+		<div class="header1">
+		<image src="C:\Users\Mamerto Gler\Desktop\Capstone Title\Website resources\BORdered.png" alt="image" heigth="150" width="150"></image>
+		<h1>Deuche Salon</h1> 
+		<nav><br>
+			<ul>
+				<!-- Lining space -->
+				<li></li>
+				<li><a href="MainPage.html">Home</a></li>
+				<li>|</li>
+				<li><a href="#">Services</a></li>
+				<li>|</li>
+				<li><a href="#">About Us</a></li>
+				<li>|</li>
+				<li><a href="#">Branches</a></li>
+				<li>|</li>
+				<li><a href="#">Shop</a></li>
+			</ul>	
+		</nav>
+	</div>
+	<!-- second header that is on the right side -->
+		<div class="header2">
+			<image src="profilenone.png" alt="image" heigth="100" width="100"></image>
+			<nav>
+				<ul>
+					<li>
+						<!-- the bordered login -->
+						<div class="curved-border">
+					<a href="LoginPage.html">Login now</a>
+				</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		</div>
+	</header>
+
+	<main>
+		<!-- the content -->
+		<section>
+			<p>Douche Salon & Spa for men & women .. [Just so you know, DOUCHE means "to bathe" in spanish]</p>
+			<br>
+			<div class="titles">
+			<h2>Choose a Style and Color</h2></div>
+			<form>
+				<label for="style">Hair Style:</label>
+				<!-- Style id -->
+				<select name="style" id="style">
+					<option value="option1">Option 1</option>
+					<option value="option2">Option 2</option>
+					<option value="option3">Option 3</option>
+				</select>
+				<label for="color">Hair Color:</label>
+				<!-- color id -->
+				<select name="color" id="color">
+					<option value="option1">Option 1</option>
+					<option value="option2">Option 2</option>
+					<option value="option3">Option 3</option>
+				</select>
+				<button type="submit">Book Now</button>
+			</form>
+			<br>
+			<br>
+			<br>
+			<br>
+			<image src="C:\Users\Mamerto Gler\Desktop\Capstone Title\Website resources\Inside.jpg" alt="image" heigth="500" width="500" class="head"></image>
+			<br>
+			<br>
+			<br>
+		</section>
+		
+		<section> 
+			<!-- The Image aligned to the right -->
+			<div class="titles">
+			<h2>Our Stylists</h2></div>
+			<div class="Style">
+				<div class="stylist1"><img src="profilenone.png" alt="Stylist 1">
+				<h3>Jessa</h3>
+				<p>Professional hair stylist</p>
+			</div>
+			<div class="stylist2">
+			    <img src="profilenone.png" alt="Stylist 2">
+				<h3>Leonad</h3>
+				<p>Rebond specialist</p>
+			</div>
+				<div class="stylist3"> 
+				<img src="profilenone.png" alt="Stylist 3">
+				<h3>Miguel</h3>
+				<p>Hair color stylist</p>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

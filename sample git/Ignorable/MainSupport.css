@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+/* The entire header design */
+.header-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #6c1779;
+	color: #fff;
+	font-family: cursive;
+	opacity: 0.9;
+	height: 120px;
+	position: relative;
+}
+.header1 {
+	padding-top: 10px;
+	padding: 5px;
+	gap: 50px ;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.header2 {
+	padding-top: 10px;
+	padding: 5px;
+	gap: 20px ;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	object-fit: cover;
+}
+
+/* The nav beside the icon */
+nav ul {
+	list-style: none;
+	display: flex;
+	margin-bottom: 10px;
+}
+
+nav ul li {
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+/* the entire body */
+main {
+	font-family: cursive;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/* Left side content */
+section {
+	flex-basis: 47%;
+	margin-bottom: 20px;
+}
+/* Right side content */
+section h2 {
+	margin-bottom: 10px;
+}
+
+form label {
+	display: block;
+}
+/* This is div for borders */
+.curved-border {
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 10px;
+	display: inline-block;
+  }
+  
+  .curved-border a {
+	color: rgb(196, 190, 190);
+	text-decoration: none;
+  }
+  .Style {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5px;
+	text-align: center;
+  }
+  
+  .item {
+	background-color: #ddd;
+	padding: 20px;
+	text-align: center;
+  }
+  .titles {
+	text-align: center;
+  }

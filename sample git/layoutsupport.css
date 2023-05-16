@@ -1,0 +1,49 @@
+/* this would be the general layout of the website that would be used across every site
+it would contain every needed layout without any specific design that is unique to a page*/ 
+
+
+.image-container {
+  position: relative;
+  width: 400px;
+  height: 300px
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay h3 {
+  color: #fff;
+  font-size: 24px;
+  margin: 20px;
+}
+
+.image-overlay p {
+  color: #fff;
+  font-size: 16px;
+  margin: 0 20px 20px;
+}
+
+.image-container h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+

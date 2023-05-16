@@ -1,0 +1,56 @@
+.container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  /* The entire login box */
+  .login-box {
+    border: 2px solid black;
+    padding: 60px;
+    background-color: rgb(236, 240, 227);
+    opacity: 0.86;
+    border-radius: 10px;
+  }
+  /* the login */
+  .login-box h2 {
+    margin-top: 0;
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  .login-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  /* The input design */
+  .login-box input[type="text"],
+  .login-box input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    border-radius: 10px;
+  }
+  /* The button */
+  .login-box input[type="submit"] {
+    width: 105%;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+  }
+  /* The logo in the login */
+  .login-box img {
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    width: 230px;
+    object-fit: cover;
+  }
+  
